@@ -5,7 +5,7 @@ fun main(args: Array<String>) {
     println("1 - Calcular media: ")
     println("2 - Verificar se é palíndroma: ")
     println("3 - Sair: ")
-    // vai ler o nome e guardar na variável nome
+    
     var opcao = readLine()!!.toInt()
     if (opcao == 1) {
         print("Digite o primeiro número: ")
@@ -16,14 +16,13 @@ fun main(args: Array<String>) {
         print(media)
     }
     else if(opcao==2){
-    //leitura do teclado
+    
     var input = Scanner(System.`in`)
-    //conversão do que foi lido do teclado para uma String
+    
     var palavra = input.next()
-    //pegando o tamanho da palavra passada, decrementando 1 para ficar dentro do limite da indexação
+    
     var tam : Int = palavra.length-1
 
-    //variavel para percorrer a palavra da esquerda para a direita
     var aux: Int = 0
     var msg: String = "é palindromo"
 
